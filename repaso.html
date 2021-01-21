@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: green;
+        padding: 30px;
+    }
+
+    header>h2 {
+        text-align: center;
+    }
+
+    .navbar {
+        float: left;
+        width: 30%;
+    }
+
+
+
+    .btn {
+        background-color: grey;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        width: 160px;
+    }
+
+    .menu {
+        display: none;
+        top: 0px;
+    }
+
+    .contenedor {
+        float: left;
+        box-shadow: 4px 2px 3px solid black;
+        width: 160px;
+    }
+
+    nav::after {
+        clear: both;
+    }
+
+    .menu a {
+        position: fixed;
+        display: inline;
+        text-decoration: none;
+        color: white;
+        padding: 12px 16px;
+        background-color: grey;
+        box-shadow: 4px 2px 3px solid grey;
+    }
+
+    .contenedor:hover .menu {
+        display: block;
+    }
+
+    .menu a:hover {
+        background-color: grey;
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .prueba img {
+        border-radius: 50%;
+        width: 10%;
+        float: left;
+        margin-right: 2px;
+
+    }
+
+    .titulo h1 {
+
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    article .dot {
+        height: 40px;
+        width: 40px;
+        background-color: #bbb;
+        border-radius: 50%;
+    }
+
+    article .hora {
+        width: 10%;
+    }
+    .dch{
+        float: right;
+    }
+
+    footer {
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        color: black;
+    }
+
+    .mobileShow {
+        display: none;
+    }
+
+    /* full width of parent */
+    .mobileShow img {
+        width: 100%;
+    }
+
+    /* Smartphone Portrait and Landscape */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .mobileShow {
+            display: block;
+            width: 40%;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            margin: 0 0 0 -20%;
+        }
+    }
+
+
+    @media (max-width: 700px) {
+
+        nav,
+        article {
+            width: 50%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h2>Cities</h2>
+
+
+    </header>
+    <div class="contenedor">
+
+        <span class="material-icons">
+            menu
+        </span>
+        <div class="menu">
+            <span class="material-icons">
+                camera_alt
+            </span>
+            <a href=#>Link 1</a>
+            <a href=#>Link 2</a>
+            <a href=#>Link 3</a>
+            <a href=#>Link 4</a>
+
+        </div>
+
+    </div>
+    </header>
+    <section>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
+            <div class="dch">
+                <div class="hora">
+                    <p>time</p>
+                    <span class="dot">1</span>
+                </div>
+            </div>
+
+
+
+
+
+        </article>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
+            <span class="dot">1</span>
+
+
+
+        </article>
+        <article>
+            <div class="prueba">
+                <img src="imagen.jpg">
+            </div>
+            <div class="titulo">
+                <h1>London</h1>
+            </div>
+            <span class="dot">1</span>
+
+
+
+        </article>
+    </section>
+    </section>
+    <span class="material-icons">
+        message
+    </span>
+
+    <footer>Pie de pagina</footer>
+</body>
+
+</html>
