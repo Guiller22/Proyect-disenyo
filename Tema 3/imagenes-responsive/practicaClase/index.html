@@ -13,7 +13,8 @@
 
 <body>
     <header>
-        Cabecera
+        <div class="logo"><img src="imagenes/Img-512.png"></div>
+        Imagenes responsive
     </header>
     <nav>
         <ul>
@@ -23,29 +24,36 @@
         </ul>
     </nav>
     <main>
-        <section class="row">
-            <div class="col">
+        <div class="contenedor">
+            <section class="row">
                 <figure class="col">
-
                     <img id="sfo" src="imagenes/img-800.jpeg"
                         srcset="imagenes/img-1000.jpeg 1000w , imagenes/img-800.jpeg 800w , imagenes/img-500.jpeg 500w"
                         sizes="(max-width: 700px) 100vw, 50vw">
                 </figure>
-            </div>
-            <div class="col">
-                <figure>
+                <figure class="col">
                     <img id="sfo" src="imagenes/img2-800.jpeg"
                         srcset="imagenes/imagen2-1000.jpeg 1000w , imagenes/imagen2-800.jpeg 800w , imagenes/imagen2-500.jpeg 500w"
                         sizes="(max-width: 700px) 100vw, 50vw">
                 </figure>
-            </div>
-            <div class="col">
-                <figure id="ultimafila">
+
+                <figure class="col">
                     <img id="sfo" src="imagenes/img3-800.jpg"
                         srcset="imagenes/imagen3-1000.jpg 1000w , imagenes/imagen3-800.jpg 800w , imagenes/imagen3-500.jpg 500w"
                         sizes="(max-width: 700px) 100vw, 50vw">
                 </figure>
+            </section>
+            <div class="row">
+                <div class="col">
+                    <video width="480" height="320" controls="controls" id="myVideo" class="centrarVideo">
+                        <source src="videos/movie_clip2.mp4" type="video/mp4" />
+                        <source src="videos/movie_clip2.ogg" type="video/ogg" />
+                        <track kind=captions src=movie_clip2.en.vtt srclang=en lang=en label="English" default>
+                        <track kind=captions src=movie_clip2.es.vtt srclang=es lang=es label="Spanish">
+                </div>
+                </video>
             </div>
+        </div>
     </main>
     <footer>
         Pie de página
