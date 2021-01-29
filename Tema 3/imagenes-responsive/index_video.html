@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <!--<link rel="stylesheet" href="../../css/estilo.css">-->
+    <link rel="stylesheet" href="./Responsive Embeds_files/icon">
+    <link rel="stylesheet" href="./Responsive Embeds_files/material.indigo-pink.min.css">
+    <script src="./Responsive Embeds_files/analytics.js.descarga"></script>
+    <script defer="" src="./Responsive Embeds_files/material.min.js.descarga"></script>
+</head>
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div id="container" role="main">
+        <div class="video-container">
+            <video width="480" height="320" controls="controls" id="myVideo">
+                <source src="glocken.mov" type="video/mov" />
+            </video>
+        </div>
+    </div>
+</body>
+</html>

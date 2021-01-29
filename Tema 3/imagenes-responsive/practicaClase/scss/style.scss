@@ -1,0 +1,31 @@
+$primary: #16d650;
+$secondary: #0d5823;
+$blanco: #ffff;
+header{
+    padding: 30px;
+    text-align: center;
+    background: $primary;
+    color: $blanco;
+    font-size: 30px;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $secondary;
+    .li{
+        float: left;
+        a{
+            display: block;
+            padding: 8px;
+            background-color: $secondary;
+            text-decoration: none;
+            color: $blanco;
+        }
+        a:hover{
+            background-color: gray;
+            color: black;
+        }
+    }
+}

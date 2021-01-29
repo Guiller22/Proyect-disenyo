@@ -3,32 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/estilo.css">
+
     <link rel="stylesheet" href="estilo/estilo_imagenes.css">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Imágenes responsive</h1>
-    <section class="row">
-        <figure class="col">
-            <img id="sfo" src="imagenes/img-800.jpeg"
-                srcset="imagenes/img-1000.jpeg 1000w , imagenes/img-800.jpeg 800w , imagenes/img-500.jpeg 500w"
-                sizes="(max-width: 700px) 100vw, 50vw">
-        </figure>
-        <figure class="col">
-            <img id="sfo" src="imagenes/img2-800.jpeg"
-                srcset="imagenes/imagen2-1000.jpeg 1000w , imagenes/imagen2-800.jpeg 800w , imagenes/imagen2-500.jpeg 500w"
-                sizes="(max-width: 700px) 100vw, 50vw">
-        </figure>
-        <figure class="col">
-            <img id="sfo" src="imagenes/img3-800.jpg"
-                srcset="imagenes/imagen3-1000.jpg 1000w , imagenes/imagen3-800.jpg 800w , imagenes/imagen3-500.jpg 500w"
-                sizes="(max-width: 700px) 100vw, 50vw">
-        </figure>
-    </div>
+    <main>
+        <h1 id="h1Image">Imágenes responsive</h1>
+        <section class="row">
+            <div class="col">
+                <figure class="col">
 
+                    <img id="sfo" src="imagenes/img-800.jpeg"
+                        srcset="imagenes/img-1000.jpeg 1000w , imagenes/img-800.jpeg 800w , imagenes/img-500.jpeg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            <div class="col">
+                <figure>
+                    <img id="sfo" src="imagenes/img2-800.jpeg"
+                        srcset="imagenes/imagen2-1000.jpeg 1000w , imagenes/imagen2-800.jpeg 800w , imagenes/imagen2-500.jpeg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            <div class="col">
+                <figure id="ultimafila">
+                    <img id="sfo" src="imagenes/img3-800.jpg"
+                        srcset="imagenes/imagen3-1000.jpg 1000w , imagenes/imagen3-800.jpg 800w , imagenes/imagen3-500.jpg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
