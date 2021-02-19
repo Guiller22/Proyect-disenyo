@@ -1,0 +1,125 @@
+$primary: #16d650;
+$secondary: #0d5823;
+$blanco: #ffff;
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background: $primary;
+    color: $blanco;
+    font-size: 30px;
+    .logo {
+        width: 3%;
+        float: left;
+    }
+}
+
+main {
+    width: 100%;
+    background-color: rgb(126, 190, 132);
+
+    .contenedor {
+        width: 80%;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            align-items: center;
+
+            @media (max-width: 800px) {
+                .col {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+            @media (max-width: 800px) {
+                .col {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .row{
+                    flex-direction: column;
+                }
+            }
+            .centrarVideo {
+                margin: 0 auto;
+                width: 400px;
+                @media screen and (max-width: 700px) {
+                    img#sfo {
+                        width: 90vw;
+                    }
+                }
+
+            }
+        }
+
+        .col {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+
+           
+
+            img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $secondary;
+    padding: 10px;
+
+    li {
+        float: left;
+        padding: 5px;
+
+        a {
+
+            padding: 8px;
+            background-color: $secondary;
+            text-decoration: none;
+            color: $blanco;
+        }
+
+        a:hover {
+            background-color: gray;
+            color: black;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+
+    #sfo {
+        transition: width 0.5s;
+
+    }
+}
+
+
+footer {
+    background-color: $primary;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
