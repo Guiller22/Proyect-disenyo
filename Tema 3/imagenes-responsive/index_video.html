@@ -5,39 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video</title>
-    <!--<link rel="stylesheet" href="../../css/estilo.css">-->
-    <link rel="stylesheet" href="./Responsive Embeds_files/icon">
-    <link rel="stylesheet" href="./Responsive Embeds_files/material.indigo-pink.min.css">
-    <script src="./Responsive Embeds_files/analytics.js.descarga"></script>
-    <script defer="" src="./Responsive Embeds_files/material.min.js.descarga"></script>
+    <link rel="stylesheet" href="estilo/estilo_video.css">
 </head>
-<style>
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 0;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
 
 <body>
+    <header>
+        <div class="logo"><img src="imagenes/Img-512.png"></div>
+        Videos
+    </header>
+    <div class="menu" id="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div id="container" role="main">
         <div class="video-container">
-            <video width="480" height="320" controls="controls" id="myVideo">
-                <source src="glocken.mov" type="video/mov" />
+            <video width="480" height="320" controls="controls" poster="poster.png" id="myVideo">
+                
+                <source src="glocken.mp4" type="video/mp4" />
+                <source src="glocken.ogg" type="video/ogg">
+                    <p>Your browser cannot play the provided video file.</p>
+                <track kind=captions src=subtitulos.en.vtt srclang=en lang=en label="English" default>
+                <track kind=captions src=subtitulos.es.vtt srclang=es lang=es label="Spanish">
             </video>
         </div>
     </div>
 </body>
+
 </html>

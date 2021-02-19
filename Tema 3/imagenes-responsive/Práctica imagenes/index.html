@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="estilo/estilo_imagenes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>Document</title>
+</head>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<body>
+    <header>
+        <div class="logo"><img src="imagenes/Img-512.png"></div>
+        Imagenes responsive
+    </header>
+    <div class="menu" id="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    </div>
+    <main>
+        <section class="row">
+            <div class="col">
+                <figure class="col">
+
+                    <img id="sfo" src="imagenes/img-800.jpeg"
+                        srcset="imagenes/img-1000.jpeg 1000w , imagenes/img-800.jpeg 800w , imagenes/img-500.jpeg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            <div class="col">
+                <figure>
+                    <img id="sfo" src="imagenes/img2-800.jpeg"
+                        srcset="imagenes/imagen2-1000.jpeg 1000w , imagenes/imagen2-800.jpeg 800w , imagenes/imagen2-500.jpeg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            <div class="col">
+                <figure id="ultimafila">
+                    <img id="sfo" src="imagenes/img3-800.jpg"
+                        srcset="imagenes/imagen3-1000.jpg 1000w , imagenes/imagen3-800.jpg 800w , imagenes/imagen3-500.jpg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw">
+                </figure>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
