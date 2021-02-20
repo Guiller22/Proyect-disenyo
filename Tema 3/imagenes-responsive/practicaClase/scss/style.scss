@@ -19,10 +19,17 @@ header {
     }
 }
 
+
 main {
     width: 100%;
     background-color: rgb(126, 190, 132);
-
+    p{
+        font-size: 80px;
+        color: white;
+    }
+    h1{
+        color: yellow;
+    }
     .contenedor {
         width: 80%;
 
@@ -77,6 +84,7 @@ main {
                 width: 100%;
             }
         }
+        
     }
 }
 

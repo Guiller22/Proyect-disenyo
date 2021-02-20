@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="script/botonesCheck.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="logo"><img src="img/icono.png"></div>
+        <div class="logo"><img src="img/icono.png" alt="icono de accesibilidad"></div>
         Accesibilidad
     </header>
     <nav>
         <ul>
-            <li><a href="trabajoAccesibilidad.html">Principal</a></li>
+            <li><a href="trabajoAccesibilidad.html" tabindex="1">Principal</a></li>
         </ul>
     </nav>
+    <main>
+        <h2>El orden de tabulación es natural</h2>
+        <button tabindex="4" style="float: right;" aria-label="boton1 Aparece Tercero">Aunque esté primero en el html
+            aparezo el tercero</button>
+        <button tabindex="2" aria-label="boton2 Aparece primero">Voy primero</button>
+        <button tabindex="3" aria-label="boton3 Aparece segundo">Voy segundo</button>
+        <h2>Select</h2>
+        <select name="opciones" aria-label="seleccion Opciones">
+            <option>Prueba</option>
+            <option>Ejemplo</option>
+            <option>Boton</option>
+        </select>
+        <div role="radiogroup">
+            <h3>
+                Elige uno (una vez dentro muevete con teclas espaciadoras)
+            </h3>
+            <div role="radio" aria-checked="false" tabindex="0">
+                Ejemplo 1
+            </div>
+            <div role="radio" aria-checked="false" tabindex="-1">
+                Ejemplo 2
+            </div>
+            <div role="radio" aria-checked="false" tabindex="-1">
+                Ejemplo 3
+            </div>
+        </div>
+        <h2>Check box ejemplo</h2>
+        <input id="promocion" type="checkbox" role="checkbox" checked aria-checked="true" aria-label="checkearboton" style="margin-left: 5px">
+        <label>¿Quieres recibir correos?</label>
+
+        <h2>Imagen con texto alternativo</h2>
+        <section class="row">
+            <div class="col">
+                <figure class="col">
+
+                    <img id="sfo" src="img/perro1000.jpg" title="perro"
+                        srcset="img/perro1000.jpeg 1000w , img/perro8000.jpeg 800w , img/perro5000.jpeg 500w"
+                        sizes="(max-width: 700px) 100vw, 50vw" alt="perro corriendo en un bosque sonriendo">
+                </figure>
+            </div>
+
+    </main>
+    <script>
+
+    </script>
+</body>
+
+</html>
