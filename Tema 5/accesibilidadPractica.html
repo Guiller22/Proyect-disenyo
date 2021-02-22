@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/botonesCheck.js"></script>
 </head>
 
@@ -15,10 +16,13 @@
         <div class="logo"><img src="img/icono.png" alt="icono de accesibilidad"></div>
         Accesibilidad
     </header>
-    <nav>
-        <ul>
-            <li><a href="trabajoAccesibilidad.html" tabindex="1">Principal</a></li>
-        </ul>
+    <nav class="menu" id="menu">
+        <a href="index.html" tabindex="1">Principal</a>
+        <a href="pruebas.html" tabindex="1">Pruebas y testeo app</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </nav>
     <main>
         <h2>El orden de tabulación es natural</h2>
@@ -27,7 +31,7 @@
         <button tabindex="2" aria-label="boton2 Aparece primero">Voy primero</button>
         <button tabindex="3" aria-label="boton3 Aparece segundo">Voy segundo</button>
         <h2>Select</h2>
-        <select name="opciones" aria-label="seleccion Opciones">
+        <select name="opciones" id="opciones" aria-label="seleccion Opciones">
             <option>Prueba</option>
             <option>Ejemplo</option>
             <option>Boton</option>
@@ -47,23 +51,41 @@
             </div>
         </div>
         <h2>Check box ejemplo</h2>
-        <input id="promocion" type="checkbox" role="checkbox" checked aria-checked="true" aria-label="checkearboton" style="margin-left: 5px">
+        <input id="promocion" type="checkbox" role="checkbox" checked aria-checked="true" aria-label="checkearboton"
+            style="margin-left: 5px">
         <label>¿Quieres recibir correos?</label>
 
         <h2>Imagen con texto alternativo</h2>
         <section class="row">
             <div class="col">
                 <figure class="col">
-
                     <img id="sfo" src="img/perro1000.jpg" title="perro"
-                        srcset="img/perro1000.jpeg 1000w , img/perro8000.jpeg 800w , img/perro5000.jpeg 500w"
+                        srcset="img/perro1000.jpg 1000w , img/perro800.jpg 800w , img/perro500.jpg.jpeg 500w"
                         sizes="(max-width: 700px) 100vw, 50vw" alt="perro corriendo en un bosque sonriendo">
                 </figure>
             </div>
+            <div class="row">
+                <div class="col">
+                    <video width="480" height="320" controls="controls" id="myVideo" class="centrarVideo">
+                        <source src="videos/movie_clip2.mp4" type="video/mp4" />
+                        <source src="videos/movie_clip2.ogg" type="video/ogg" />
+                        <track kind=captions src="videos/subtitulos.en.vtt" English srclang=en lang="en" default>
+                        <track kind=captions src="videos/subtitulos.es.vtt" srclang=es lang=es label="Spanish">
+                </div>
+                </video>
+            </div>
+        </section>
 
     </main>
     <script>
-
+        function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "menu") {
+            x.className += " responsive";
+        } else {
+            x.className = "menu";
+        }
+    }
     </script>
 </body>
 
